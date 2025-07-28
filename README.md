@@ -14,4 +14,32 @@ A modern and responsive car rental application frontend built using **React.js**
 | Backend   | Node.js, Express.js, MongoDB Atlas  |
 | Hosting   | Vercel (frontend), Render (backend) |
 
+## 📁 Folder Structure
+
+car-rental/
+├── client/ # React Frontend (Vite + Tailwind)
+│ ├── public/ # Static assets
+│ ├── src/
+│ │ ├── assets/ # Images, icons, etc.
+│ │ ├── components/ # Reusable React components
+│ │ ├── pages/ # Page-wise components
+│ │ ├── routes/ # React Router files (if used)
+│ │ ├── utils/ # Axios instance, helper functions
+│ │ └── App.jsx # Root component
+│ ├── index.html
+│ └── vite.config.js
+│
+├── server/ # Node.js + Express Backend
+│ ├── controllers/ # Route handler logic
+│ ├── models/ # Mongoose DB Models
+│ ├── routes/ # API route definitions
+│ ├── middleware/ # Auth, error, validation, etc.
+│ ├── config/ # MongoDB connection, env setup
+│ ├── uploads/ # For storing image files (optional)
+│ ├── .env # Environment variables
+│ └── index.js # Server entry point
+│
+├── .gitignore
+├── README.md
+
 
